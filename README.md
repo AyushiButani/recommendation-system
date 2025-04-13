@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# 🌾 Crop Recommendation System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a machine learning–based crop recommendation system that predicts the most suitable crop to grow based on environmental and soil conditions. The system integrates a trained ML model with a React-based frontend and a Flask API backend.
 
-## Available Scripts
+## 🎯 Project Objective
 
-In the project directory, you can run:
+To support sustainable agriculture by helping farmers make data-driven decisions about crop selection using soil nutrient levels and weather patterns.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🧠 How It Works
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users provide the following inputs:
+- **N**itrogen, **P**hosphorus, **K** (Potassium)
+- **Temperature** (°C)
+- **Humidity** (%)
+- **Soil pH**
+- **Rainfall** (mm)
 
-### `npm test`
+The system processes this input through a trained machine learning model and returns the **best crop recommendation** for cultivation under those conditions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 💼 My Role: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As part of this group project, I took the lead on the data science and machine learning components, contributing to the system’s predictive capabilities. Specifically:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 📊 **Data Cleaning & Preprocessing**: Handled missing values, normalized features, and prepared the dataset for training.
+- 📈 **Exploratory Data Analysis**: Used Seaborn & Matplotlib to visualize relationships between soil/weather variables and crop output.
+- 🧪 **Model Development & Evaluation**:
+  - Trained multiple classifiers (e.g., Random Forest, Decision Tree, SVM).
+  - Evaluated them using accuracy, precision, recall, and F1-score.
+  - Tuned hyperparameters for optimal performance.
+- 💾 **Model Deployment**:
+  - Saved the final model using `joblib`.
+  - Deployed it via a REST API built in Flask.
+- 🔁 **Frontend Integration**: Worked with the team to link the ML backend to a React UI for real-time crop predictions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> This project strengthened my skills in **machine learning, model deployment, Flask APIs, and full-stack integration** — all of which are highly relevant for data science internships.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend**: React.js, CSS
+- **Backend**: Python, Flask
+- **ML Tools**: Pandas, Scikit-learn, Seaborn, Matplotlib
+- **Deployment**: Flask REST API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 How to Run This Project Locally (Step-by-Step Guide)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Follow the steps below to run the full crop recommendation system on your machine.
 
-## Learn More
+## 🚀 Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# STEP 1: Clone the project from GitHub
+git clone https://github.com/AyushiButani/recommendation-system.git
+cd recommendation-system
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# STEP 2: Set up and run the backend (Flask API)
+cd src/django-ML-API
 
-### Code Splitting
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate        # For macOS/Linux
+venv\Scripts\activate           # For Windows
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Install required Python packages
+pip install -r requirements.txt
 
-### Analyzing the Bundle Size
+# Run the Flask server
+python app.py
+# Backend will now be running at http://localhost:5000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# STEP 3: Run the frontend (React app)
+cd ../..                        # Go back to the root project directory
+npm install                    # Install frontend dependencies
+npm start                      # Start the React development server
 
-### Making a Progressive Web App
+# The frontend will now run at http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## 📸 Sample Prediction Output
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> **Input:**  
+> N = 90, P = 42, K = 43, Temp = 21.2°C, Humidity = 82%, pH = 6.5, Rainfall = 202 mm  
+ 
+ **Predicted Crop:** 🌾 Rice
 
-### Deployment
+👥 Acknowledgment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Originally developed by our team and hosted by @dinesh250-star.
+This version is forked to highlight my contributions in data science and ML deployment.
 
-### `npm run build` fails to minify
+## 📫 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to reach out for **data science internships**, or to learn more about my work:
+
+📧 ayushibutani9@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/ayushi-butani/)  
+🌐 [GitHub](https://github.com/AyushiButani)
+
+
+
+
