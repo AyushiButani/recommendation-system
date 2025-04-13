@@ -46,16 +46,31 @@ As part of this group project, I took the lead on the data science and machine l
 
 ## 🚀 How to Run This Project Locally
 
-Follow the steps below to set up and run the full crop recommendation system on your machine.
+✅ STEP 1: Clone the Repository
+git clone https://github.com/AyushiButani/recommendation-system.git
+cd recommendation-system
 
-<pre> ``` ✅ STEP 1: Clone the Repository git clone https://github.com/AyushiButani/recommendation-system.git cd recommendation-system 
-  ✅ STEP 2: Run the Backend (Flask API) cd src/django-ML-API 
-  # (Optional) Create a virtual environment python -m venv venv source venv/bin/activate 
-  # For macOS/Linux venv\Scripts\activate # For Windows # Install dependencies pip install -r requirements.txt 
-  # Start Flask server python app.py 🔗 Backend running at: http://localhost:5000 
-  ✅ STEP 3: Run the Frontend (React App) cd ../.. 
-  # Go back to root folder npm install # Install frontend dependencies npm start 
-  # Start React app 🔗 Frontend running at: http://localhost:3000 ``` </pre>
+✅ STEP 2: Run the Backend (Flask API)
+cd src/django-ML-API
+
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate         # For macOS/Linux
+venv\Scripts\activate            # For Windows
+
+# Install required dependencies
+pip install -r requirements.txt
+
+# Start the Flask backend
+python app.py
+# 🔗 Backend running at: http://localhost:5000
+
+✅ STEP 3: Run the Frontend (React App)
+cd ../..                         # Go back to root folder
+npm install                     # Install frontend dependencies
+npm start                       # Start the React app
+# 🔗 Frontend running at: http://localhost:3000
+
 
 👥 Acknowledgment
 
