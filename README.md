@@ -34,7 +34,7 @@ As part of this group project, I took the lead on the data science and machine l
   - Deployed it via a REST API built in Flask.
 - 🔁 **Frontend Integration**: Worked with the team to link the ML backend to a React UI for real-time crop predictions.
 
-> This project strengthened my skills in **machine learning, model deployment, Flask APIs, and full-stack integration** — all of which are highly relevant for data science internships.
+-This project strengthened my skills in **machine learning, model deployment, Flask APIs, and full-stack integration** — all of which are highly relevant for data science internships.
 
 
 ## 🛠️ Tech Stack
@@ -44,45 +44,41 @@ As part of this group project, I took the lead on the data science and machine l
 - **ML Tools**: Pandas, Scikit-learn, Seaborn, Matplotlib
 - **Deployment**: Flask REST API
 
-## 🚀 How to Run This Project Locally (Step-by-Step Guide)
+## 🚀 How to Run This Project Locally
 
-Follow the steps below to run the full crop recommendation system on your machine.
+Follow the steps below to set up and run the full crop recommendation system on your machine.
 
-## 🚀 Getting Started
+---
 
-# STEP 1: Clone the project from GitHub
+### 🔁 Clone the Repository
+
+```bash
 git clone https://github.com/AyushiButani/recommendation-system.git
 cd recommendation-system
 
-# STEP 2: Set up and run the backend (Flask API)
+
+### 🧠 Set Up the Backend (Flask API)
+
+```bash
 cd src/django-ML-API
 
-# (Optional) Create a virtual environment
+# (Optional) Create virtual environment
 python -m venv venv
-source venv/bin/activate        # For macOS/Linux
-venv\Scripts\activate           # For Windows
+source venv/bin/activate        # macOS/Linux
+venv\Scripts\activate           # Windows
 
-# Install required Python packages
+# Install dependencies
 pip install -r requirements.txt
 
-# Run the Flask server
+# Run backend
 python app.py
-# Backend will now be running at http://localhost:5000
 
-# STEP 3: Run the frontend (React app)
-cd ../..                        # Go back to the root project directory
-npm install                    # Install frontend dependencies
-npm start                      # Start the React development server
+###🖥️ Run the Frontend (React App)
 
-# The frontend will now run at http://localhost:3000
+cd ../..         # Go back to root folder
+npm install      # Install frontend dependencies
+npm start        # Start React app
 
-
-## 📸 Sample Prediction Output
-
-> **Input:**  
-> N = 90, P = 42, K = 43, Temp = 21.2°C, Humidity = 82%, pH = 6.5, Rainfall = 202 mm  
- 
- **Predicted Crop:** 🌾 Rice
 
 👥 Acknowledgment
 
