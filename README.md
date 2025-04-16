@@ -85,6 +85,13 @@ Feel free to reach out for **data science internships**, or to learn more about 
 🔗 [LinkedIn](https://www.linkedin.com/in/ayushi-butani/)  
 🌐 [GitHub](https://github.com/AyushiButani)
 
+## 📄 Research Publication
+
+This project is supported by a published research paper and certificate:
+
+- [📘 View Research Paper](./Crop_Recommendation_Research_Paper.pdf)
+- [📜 View Certificate](./Publication_Certificate_Gradiva.jpeg)
+
 
 
 
